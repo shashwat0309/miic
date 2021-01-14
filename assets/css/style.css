@@ -1969,3 +1969,36 @@ section {
       margin-bottom: 10px;
   }
 }
+
+
+.eventImg{
+  height: 30%;
+  width: 45%;
+}
+
+.timeline-content a{
+  text-decoration: none;
+  display: inline-block;
+  background-color: #D92C41;
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  padding: 1%;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+}
+
+.timeline-content a:hover{
+  border: 2px solid #FF794A;
+  background-color: white;
+  color: black;
+}
+
+.eventImg{
+  display: none;
+}
