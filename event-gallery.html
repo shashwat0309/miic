@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width= device-width, initial-scale= 1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/event-gallery.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container" id="gallery">
+            <div class="row mt-5">
+                <!--1-->
+                <div class="col-md-4 col-sm-12 component">
+                    <img class="img-fluid image" id="photo1" src="./assets/img/event-gallery/image.jpg" onmouseover="show('cap1','photo1')" onmouseout="hide('cap1','photo1')">
+                    <div class="caption" id="cap1">
+                        <h2 class="title" id="t1">Title</h2>
+                        <p class="des" id="d1">Description</p>
+                        <button class="btn viewbtn"  onmouseover="show('cap1','photo1'), zoomin('photo1')" onclick="openModal();currentSlide(1)" onmouseout="zoomout('photo1')"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button class="btn sharebtn" onmouseover="show('cap1','photo1')"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                 <!--1-->
+                 <div class="col-md-4 col-sm-12 component">
+                    <img class="img-fluid image" id="photo2" src="./assets/img/event-gallery/image2.jpg" onmouseover="show('cap2','photo2')" onmouseout="hide('cap2','photo2')">
+                    <div class="caption" id="cap2">
+                        <h2 class="title" id="t2">Title</h2>
+                        <p class="des" id="d2">Description</p>
+                        <button class="btn viewbtn" onmouseover="show('cap2','photo2'), zoomin('photo2')" onclick="openModal();currentSlide(2)" onmouseout="zoomout('photo2')"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button class="btn sharebtn" onmouseover="show('cap2','photo2')"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                 <!--1-->
+                 <div class="col-md-4 col-sm-12 component">
+                    <img class="img-fluid image" id="photo3" src="./assets/img/event-gallery/image3.jpg" onmouseover="show('cap3','photo3')" onmouseout="hide('cap3','photo3')">
+                    <div class="caption" id="cap3">
+                        <h2 class="title" id="t3">Title</h2>
+                        <p class="des" id="d3">Description</p>
+                        <button class="btn viewbtn" onmouseover="show('cap3','photo3'), zoomin('photo3')" onclick="openModal();currentSlide(3)" onmouseout="zoomout('photo3')" ><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button class="btn sharebtn" onmouseover="show('cap3','photo3')"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                 <!--1-->
+                 <div class="col-md-4 col-sm-12 component">
+                    <img class="img-fluid image" id="photo4" src="./assets/img/event-gallery/image.jpg" onmouseover="show('cap4','photo4')" onmouseout="hide('cap4','photo4')">
+                    <div class="caption" id="cap4">
+                        <h2 class="title" id="t4">Title</h2>
+                        <p class="des" id="d4">Description</p>
+                        <button class="btn viewbtn" onmouseover="show('cap4','photo4'), zoomin('photo4')" onclick="openModal();currentSlide(4)" onmouseout="zoomout('photo4')"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button class="btn sharebtn" onmouseover="show('cap4','photo4')"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <!--1-->
+                <div class="col-md-4 col-sm-12 component">
+                    <img class="img-fluid image" id="photo5" src="./assets/img/event-gallery/image2.jpg" onmouseover="show('cap5','photo5')" onmouseout="hide('cap5','photo5')">
+                    <div class="caption" id="cap5">
+                        <h2 class="title" id="t5">Title</h2>
+                        <p class="des" id="d5">Description</p>
+                        <button class="btn viewbtn" onmouseover="show('cap5','photo5'), zoomin('photo5')" onclick="openModal();currentSlide(5)" onmouseout="zoomout('photo5')"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button class="btn sharebtn" onmouseover="show('cap5','photo5')"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                 <!--1-->
+                 <div class="col-md-4 col-sm-12 component">
+                    <img class="img-fluid image" id="photo6" src="./assets/img/event-gallery/image3.jpg" onmouseover="show('cap6','photo6')" onmouseout="hide('cap6','photo6')">
+                    <div class="caption" id="cap6">
+                        <h2 class="title" id="t6">Title</h2>
+                        <p class="des" id="d6">Description</p>
+                        <button class="btn viewbtn" onmouseover="show('cap6','photo6'), zoomin('photo6')" onclick="openModal();currentSlide(6)" onmouseout="zoomout('photo6')"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button class="btn sharebtn" onmouseover="show('cap6','photo6')" ><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div><!--row end-->
+
+            <div id="modal">
+                <button id="close" onclick="closeModal()"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <div id="modal-content">
+                    <div class="slides">
+                        <img src="./assets/img/event-gallery/image.jpg" class="modal-img">
+                    </div>
+
+                    <div class="slides">
+                        <img src="./assets/img/event-gallery/image2.jpg" class="modal-img">
+                    </div>
+
+                    <div class="slides">
+                        <img src="./assets/img/event-gallery/image3.jpg" class="modal-img">
+                    </div>
+
+                    <div class="slides">
+                        <img src="./assets/img/event-gallery/image.jpg" class="modal-img">
+                    </div>
+
+                    <div class="slides">
+                        <img src="./assets/img/event-gallery/image2.jpg" class="modal-img">
+                    </div>
+
+                    <div class="slides">
+                        <img src="./assets/img/event-gallery/image3.jpg" class="modal-img">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+
+        </div><!--Container end-->
+
+        <script src="./assets/js/event-gallery.js"></script>
+    </body>
+</html>
