@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="626a746c-a8db-4724-b1e9-454cf4f5bb1d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/coreMentor.html" beforeDir="false" afterPath="$PROJECT_DIR$/coreMentor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event.html" beforeDir="false" afterPath="$PROJECT_DIR$/event.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/team.html" afterDir="false" />
-    </list>
+    <list default="true" id="626a746c-a8db-4724-b1e9-454cf4f5bb1d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
